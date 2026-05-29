@@ -29,7 +29,7 @@ jobs:
   summarize:
     runs-on: ubuntu-latest
     steps:
-      - uses: wsgcjj/pr-summarizer@v1
+      - uses: cjjgh/pr-summarizer@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
