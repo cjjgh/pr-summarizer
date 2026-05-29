@@ -1,0 +1,14 @@
+name: 'PR Summarizer'
+description: 'Automatically generate structured summaries for Pull Requests'
+author: 'wsgcjj'
+branding:
+  icon: 'file-text'
+  color: 'blue'
+inputs:
+  github-token:
+    description: 'GitHub token for API access'
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
